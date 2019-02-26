@@ -33,5 +33,5 @@ if [ $IN7DAYS -gt $EXPIRATIONDATE ]; then
     echo "KO - Certificate for $SITE expires in less than $DAYS days, on $(date -d @$EXPIRATIONDATE '+%Y-%m-%d')" \
     | echo "Certificate expiration warning for $SITE" $EMAIL ;
 else
-    echo "OK - Certificate expires on $resulthuman";
+    echo "OK - Certificate expires on $resulthuman days" ;
 fi;
